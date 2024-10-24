@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    
+<meta charset="UTF-8">
+    
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<title>PharmaBuddy</title>
+    
+<link rel="stylesheet" href="style.css">
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    
+<!-- bootstrap links -->
+    
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+<!-- bootstrap links -->
+    
+<!-- fonts links -->
+    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    
+<!-- fonts links -->
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg" id="navbar">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="index.html" id="logo">
+              <span id="span1">P</span>harma<span>Buddy</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span><img src="./images/menu.png" alt="" width="30px"><i class="fa-solid fa-bars"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="product.html">Product</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Category</a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color:#246174;">
+                          <li><a class="dropdown-item" href="sm.html">Anesthesia</a></li>
+                          <li><a class="dropdown-item" href="mp.html">Antiallergics</a></li>
+                          <li><a class="dropdown-item" href="c.html">Dermatological Medicines</a></li>
+                          <li><a class="dropdown-item" href="f.html">Cardiovascular Medicines</a></li>
+                          <li><a class="dropdown-item" href="ac.html">Antiparkinsonism Medicines</a></li>
+                          <li><a class="dropdown-item" href="sw.html">Immunosuppressive Medicines</a></li>
+                          <li><a class="dropdown-item" href="hp.html">Antimigraine Medicines</a></li>
+                          <li><a class="dropdown-item" href="lap.html">Anti-infective Medicines</a></li>
+                          <li><a class="dropdown-item" href="pc.html">Antiallergics Medicines</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="about.html">About</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="login.html">login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="register.html">register</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Order <i class="fa-solid fa-cart-shopping"></i></a>
+                </li>
+              </ul>
+              
+          </div>
+      </div>
+      <div class="nav-search">
+          <input placeholder="Search for Medicine and Health Products" class="search-input">
+          <div class="search-icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+      </div>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item icons" >
+          <a href="profile.html"><img src="./images/register.png" alt="" width="18px"><i class="fa-solid fa-user" id="loginp"></i>profile</a>
+        </li>
+    </ul>
+  </nav>
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  
+  <div class="pannel">
+  
+      <div class="pannel-medicine" id="Apple">
+       <i class="fa-solid fa-clipboard-list"></i>
+         <pre>Get 15% off on
+  Medicines</pre>
+        <i class="fa-solid fa-angle-right"></i>
+      </div>
+      <div class="pannel-hospital" id="Apple">
+        <i class="fa-regular fa-hospital"></i>
+          <p>Hospital Visit</p>
+          <i class="fa-solid fa-angle-right"></i>
+       </div>
+       <div class="pannel-video" id="Apple">
+        <i class="fa-solid fa-hospital-user"></i>
+          <p>Video Consult</p>
+          <i class="fa-solid fa-angle-right"></i>
+       </div>
+       <div class="pannel-lab" id="Apple">
+        <i class="fa-solid fa-flask-vial"></i>
+          <p>Lab Test</p>
+          <i class="fa-solid fa-angle-right"></i>
+       </div>
+  
+  </div>
+  
+
+<!-- profile........................................................................................................................................................... -->
+
+
+
+
+<div class="profilein">
+    <div class="profiling">
+        <div class="profilemsg">
+            <div class="subTag">Name :  <p id="nameMassage"></p></div>
+            <div class="subTag">Age :  <p id="ageMassage"></p></div>
+            <div class="subTag">Number : <p id="phoneMassage"></p> </div>
+            <div class="subTag">Email Id:   <p id="emailMassage"></p> </div>
+            <hr>
+            <div class="subTag">Symtoms :   <div  id="medicineInfo"></div></div>
+            <div class="subTag">Medicine :   <div  id="medicineList"></div></div>
+            <div class="subTag"><div  id="timeToTake"></div></div>
+
+            
+        
+        </div>
+
+
+    </div>
+    <div class="profilecounter" ></div>
+</div>
+  
+      <script>
+          const storedname = localStorage.getItem('nameMassage');
+          if (storedname) {
+              document.getElementById('nameMassage').textContent = storedname;
+          }
+
+          const storedphone = localStorage.getItem('phoneMassage');
+          if (storedname) {
+              document.getElementById('phoneMassage').textContent =  storedphone;
+          }
+
+          const storedemail = localStorage.getItem('emailMassage');
+          if (storedemail) {
+              document.getElementById('emailMassage').textContent =  storedemail;
+          }
+
+          const storedage = localStorage.getItem('ageMassage');
+          if (storedage) {
+              document.getElementById('ageMassage').textContent =  storedage;
+          }
+  
+      </script>
+
+
+<!-- profile ...................................................................................................................................................................-->
+
+
+    
+        <script>
+            // Parse the query string to get the symptoms
+            var urlParams = new URLSearchParams(window.location.search);
+            var symptoms = urlParams.get('symptoms');
+    
+            // Check if symptoms include fever and display appropriate medicine
+            if (symptoms.toLowerCase().includes("fever")) {
+                alert("Recommended medicine: Paracetamol (acetaminophen) ");
+                document.getElementById("medicineInfo").textContent = "fever";
+                document.getElementById("medicineList").textContent = "Ibuprofen / paracetamol";
+                document.getElementById("timeToTake").textContent = "Take with food every 6-8 hours";
+
+            }
+            if (symptoms.toLowerCase().includes("headache")) {
+                alert(" Recommended medicine: Acetaminophen , Aspirin");
+                document.getElementById("medicineInfo").textContent = "Headache";
+                document.getElementById("medicineList").textContent = "Acetaminophen , Aspirin";
+                document.getElementById("timeToTake").textContent = "Take with food every 4-6 hr";
+
+            }
+            if (symptoms.toLowerCase().includes("cough")) {
+                alert("Recommended medicine: Dextromethorphan");
+                document.getElementById("medicineInfo").textContent = "Cough";
+                document.getElementById("medicineList").textContent = "Dextromethorphan";
+                document.getElementById("timeToTake").textContent = "Take as directed,usually every 4-6 hr";
+
+            } 
+            if (symptoms.toLowerCase().includes("throat infection")) {
+                alert("Recommended medicine: Acetaminophen or Ibuprofen for pain relief.");
+                document.getElementById("medicineInfo").textContent = "Throat Infection";
+                document.getElementById("medicineList").textContent = "Acetaminophen or Ibuprofen ";
+
+            } 
+            if (symptoms.toLowerCase().includes("body pain")) {
+                alert(" Recommended medicine : ibuprofen, acetaminophen, or naproxen");
+                document.getElementById("medicineInfo").textContent = "Body Pain";
+                document.getElementById("medicineList").textContent = "acetaminophen ,naproxen";
+                document.getElementById("timeToTake").textContent = "Usually 220mg every 8-12 hr as needed";
+
+            }
+            if (symptoms.toLowerCase().includes("chickenpox")) {
+                alert("Recommended medicine: Antihistamines: Antihistamines such as diphenhydramine can help relieve itching associated with chickenpox rash.");
+                document.getElementById("medicineInfo").textContent = "Chickenpox";
+                document.getElementById("medicineList").textContent = "Antihistamines , Acetaminophen";
+                document.getElementById("timeToTake").textContent = "Calamine lotion or oatmeal baths";
+
+            } 
+            if (symptoms.toLowerCase().includes("dehydration")) {
+                alert("Recommended medicine:  In mild cases, rehydration with oral rehydration solutions (ORS)");
+                document.getElementById("medicineInfo").textContent = "Dehydration";
+                document.getElementById("medicineList").textContent = "Oral Rehydration Solution";
+                document.getElementById("timeToTake").textContent = "(ORS) Take as directed every 4-6 hr";
+
+              }
+              if (symptoms.toLowerCase().includes("tooth sensitivity")) {
+                alert("Recommended medicine:  In mild cases, rehydration with oral rehydration solutions (ORS)");
+                document.getElementById("medicineInfo").textContent = "Tooth Sensitivity";
+                document.getElementById("medicineList").textContent = "Plantago";
+                document.getElementById("timeToTake").textContent = "Garlic:traditional remedy that can fight bacteria";
+
+              }
+        </script>
+
+    <script src="index.js" ></script>
+
+</body>
+</html>

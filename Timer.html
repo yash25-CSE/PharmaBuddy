@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30-Minute Stopwatch</title>
+    <style>
+        /* Styles for the stopwatch container */
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        /* Styles for the time display */
+        #time {
+            font-size: 24px;
+        }
+        /* Styles for the buttons */
+        .btn {
+            margin: 10px;
+            padding: 5px 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>30-Minute Stopwatch</h1>
+        <div id="time">
+            <span class="digit" id="min">00</span>:<span class="digit" id="sec">00</span>
+        </div>
+        <div id="buttons">
+            <button class="btn" id="start">Start</button>
+            <button class="btn" id="stop">Stop</button>
+            <button class="btn" id="reset">Reset</button>
+        </div>
+    </div>
+    <script>
+        // Initialize variables
+        let timerInterval;
+        let minutes = 30;
+        let seconds = 0;
+
+        // Display initial time
+        document.getElementById("min").textContent = minutes.toString().padStart(2, "0");
+        document.getElementById("sec").textContent = seconds.toString().padStart(2, "0");
+
+        // Start button click event
+        document.getElementById("start").addEventListener("click", () => {
+            timerInterval = setInterval(updateTime, 1000);
+        });
+
+        // Stop button click event
+        document.getElementById("stop").addEventListener("click", stop);
+
+        // Reset button click event
+        document.getElementById("reset").addEventListener("click", () => {
+            clearInterval(timerInterval);
+            minutes = 30;
+            seconds = 0;
+            document.getElementById("min").textContent = minutes.toString().padStart(2, "0");
+            document.getElementById("sec").textContent = seconds.toString().padStart(2, "0");
+        });
+
+        // Function to update time
+        function updateTime() {
+            if (minutes === 0 && seconds === 0) {
+                clearInterval(timerInterval);
+                alert("Time's up!");
+            } else {
+                if (seconds === 0) {
+                    minutes--;
+                    seconds = 59;
+                } else {
+                    seconds--;
+                }
+                document.getElementById("min").textContent = minutes.toString().padStart(2, "0");
+                document.getElementById("sec").textContent = seconds.toString().padStart(2, "0");
+            }
+        }
+
+        // Function to stop the timer
+        function stop() {
+            clearInterval(timerInterval);
+        }
+    </script>
+</body>
+</html>

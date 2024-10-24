@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    
+<meta charset="UTF-8">
+    
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<title>Pharma Buddy</title>
+    
+<link rel="stylesheet" href="style.css">
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    
+<!-- bootstrap links -->
+    
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+<!-- bootstrap links -->
+    
+<!-- fonts links -->
+    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    
+<!-- fonts links -->
+
+</head>
+
+<body>
+
+
+ 
+    
+<!-- top navbar -->
+    
+<nav class="navbar navbar-expand-lg" id="navbar">
+  <div class="container-fluid">
+      <a class="navbar-brand" href="index.html" id="logo">
+          <span id="span1">P</span>harma<span>Buddy</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span><img src="./images/menu.png" alt="" width="30px"><i class="fa-solid fa-bars"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="product.html">Product</a>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Category</a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color:#246174;">
+                      <li><a class="dropdown-item" href="sm.html">Anesthesia</a></li>
+                      <li><a class="dropdown-item" href="mp.html">Antiallergics</a></li>
+                      <li><a class="dropdown-item" href="c.html">Dermatological Medicines</a></li>
+                      <li><a class="dropdown-item" href="f.html">Cardiovascular Medicines</a></li>
+                      <li><a class="dropdown-item" href="ac.html">Antiparkinsonism Medicines</a></li>
+                      <li><a class="dropdown-item" href="sw.html">Immunosuppressive Medicines</a></li>
+                      <li><a class="dropdown-item" href="hp.html">Antimigraine Medicines</a></li>
+                      <li><a class="dropdown-item" href="lap.html">Anti-infective Medicines</a></li>
+                      <li><a class="dropdown-item" href="pc.html">Antiallergics Medicines</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="register.html">register</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Order <i class="fa-solid fa-cart-shopping"></i></a>
+          </li>
+          </ul>
+          
+      </div>
+  </div>
+  <div class="nav-search">
+      <input placeholder="Search for Medicine and Health Products" class="search-input">
+      <div class="search-icon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+  </div>
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item icons" >
+      <a href="profile.html"><img src="./images/register.png" alt="" width="18px"><i class="fa-solid fa-user" id="loginp"></i>profile</a>
+    </li>
+</ul>
+</nav>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+<!-- navbar -->
+    
+<style>
+    /* General Styles */
+  
+
+    /* Main Container */
+    .mainContainer {
+      background-image: url("https://www.advancerecruitment.net/imglib/blog-images/How-to-Move-into-Your-First-Manager-Role-in-the-Medical-Sales-Sector-1200x628.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .childContainer {
+      background-color: rgba(20, 40, 40, 0.5);
+       height: 80vh;
+        width: 50vw;
+      padding: 20px;
+      border-radius: 15px;
+      color: white;
+      box-shadow: 2px 5px 5px black;
+   
+      max-width: 600px;
+     
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+    #entry {
+        width: 90%;
+        box-shadow: 2px 2px 2px black;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+      padding-top: 2px;
+        padding-left: 20px;
+        padding-right: 12px;
+    }
+
+    .form-group label {
+     
+      font-size: 16px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 400;
+    }
+
+    .form-group input {
+      width: 100%;
+      border-radius: 5px;
+      box-shadow: 2px 2px 5px black;
+      font-size: 1rem;
+
+
+      height: 25px;
+        border-radius: 5px;
+        padding-left: 20px;
+        border: none;
+        background-color: whitesmoke;
+    }
+
+    .another {
+      display: flex;
+      flex-wrap: wrap;
+   
+    }
+  
+
+    .form-pass {
+      margin-top: 4px;
+    }
+
+
+    .submit {
+     
+      display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 45px;
+       padding-left: 45px;
+    }
+
+    .submit input {
+      width: 20%;
+        padding: 0;
+        cursor: pointer;
+        height: 34px;
+        background-color: rgb(27, 183, 183);
+        color: white;
+        font-size: 18px;
+        font-weight: 400;
+       
+    }
+
+    .submit input:hover {
+      background-color: darkcyan;
+    }
+
+    .credits {
+      text-align: center;
+    }
+
+    .credits a {
+      color: black;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .mainContainer {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+      }
+
+      .childContainer {
+        width: 95%;
+        padding: 15px;
+      }
+
+      h2 {
+        font-size: 1.2rem;
+      }
+
+      .form-group input {
+        font-size: 0.9rem;
+      }
+
+      .submit input {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Registration Form -->
+  <div class="mainContainer">
+    <div class="childContainer">
+      <div class="forms">
+        <h2>Registration Here</h2>
+        <div id="contact-box">
+         
+            
+            <form class="main_form" action="doRegister.php" method="post" id="request" >
+
+
+
+
+
+            <div class="form-group">
+              <label for="nameInput">Name:</label>
+              <input class="form-control contactus" placeholder="Name" type="text" name="name" required  id="nameInput" placeholder="Enter your name"  >
+            </div>
+
+
+
+
+            <div class="form-group">
+              <label for="ageInput">Age:</label>
+              <input class="form-control contactus" placeholder="Age" type="number" name="age" required id="ageInput" placeholder="Enter your Age">
+              
+            </div>
+            <div class="form-group">
+              <label for="emailInput">Email:</label>
+              
+              <input class="form-control contactus" placeholder="Email" type="email" name="email" required id="emailInput" placeholder="Enter your Email-address" >
+            </div>
+            <div class="form-group">
+              <label for="phoneInput">Phone Number:</label>
+             
+              <input class="form-control contactus" placeholder="Phone Number" type="text" name="phone" required id="phoneInput" placeholder="Enter your Contact Number">
+            </div>
+            <div class="another">
+              <div class="form-group">
+                <label for="passInput">Password:</label>
+               
+                <input class="form-control contactus" placeholder="Password" type="password" name="password" required id="passInput" placeholder="Enter your Password">
+              </div>
+              <div class="form-group form-pass">
+                <label for="passwordConfirm">Enter Massage</label>
+                
+                <input class="form-control contactus" placeholder="Message" type="text" name="message" required id="password" placeholder="Enter your Massage">
+              </div>
+            </div>
+            <div class="col-md-12" style="padding-left:20px ;">
+              <label>Sex:</label>
+              <input placeholder="male" type="radio" name="sex" value="male" required> Male
+              <input placeholder="female" type="radio" name="sex" value="female" required> Female
+              <input placeholder="other" type="radio" name="sex" value="other" required>Other
+            <div class="form-group submit">
+              <input class="send_btn" value="Register " name="send_btn"  href="profile.html" type="submit"  id="submit" onclick="sendname();register()" >
+           
+            </div>
+            <div class="credits" style="padding-bottom: 30px;">
+              <a href="profile.html">Already have an account? Login here</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+      function sendname() {
+
+          const nameinput2 = document.getElementById('nameInput').value;
+          localStorage.setItem('nameMassage2', nameinput2);
+         
+  
+          const nameinput = document.getElementById('nameInput').value;
+          localStorage.setItem('nameMassage', nameinput);
+          
+  
+          const ageinput = document.getElementById('ageInput').value;
+          localStorage.setItem('ageMassage', ageinput);
+         
+  
+          const phoneinput = document.getElementById('phoneInput').value;
+          localStorage.setItem('phoneMassage', phoneinput);
+         
+  
+         
+          const emailinput = document.getElementById('emailInput').value;
+          localStorage.setItem('emailMassage', emailinput);
+
+
+      }
+
+
+
+
+  </script>
+            
+   
+</div>
+
+</body>
+
+</html

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    
+<meta charset="UTF-8">
+    
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<title>PharmaBuddy</title>
+    
+<link rel="stylesheet" href="style.css">
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    
+<!-- bootstrap links -->
+    
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+<!-- bootstrap links -->
+    
+<!-- fonts links -->
+    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    
+<!-- fonts links -->
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg" id="navbar">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html" id="logo">
+            <span id="span1">P</span>harma<span>Buddy</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span><img src="./images/menu.png" alt="" width="30px"><i class="fa-solid fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="product.html">Product</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Category</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color:#246174;">
+                        <li><a class="dropdown-item" href="sm.html">Anesthesia</a></li>
+                        <li><a class="dropdown-item" href="mp.html">Antiallergics</a></li>
+                        <li><a class="dropdown-item" href="c.html">Dermatological Medicines</a></li>
+                        <li><a class="dropdown-item" href="f.html">Cardiovascular Medicines</a></li>
+                        <li><a class="dropdown-item" href="ac.html">Antiparkinsonism Medicines</a></li>
+                        <li><a class="dropdown-item" href="sw.html">Immunosuppressive Medicines</a></li>
+                        <li><a class="dropdown-item" href="hp.html">Antimigraine Medicines</a></li>
+                        <li><a class="dropdown-item" href="lap.html">Anti-infective Medicines</a></li>
+                        <li><a class="dropdown-item" href="pc.html">Antiallergics Medicines</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="login.html">login</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="register.html">register</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Order <i class="fa-solid fa-cart-shopping"></i></a>
+            </li>
+            </ul>
+            
+        </div>
+    </div>
+    <div class="nav-search">
+        <input placeholder="Search for Medicine and Health Products" class="search-input">
+        <div class="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </div>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item icons" >
+        <a href="profile.html"><img src="./images/register.png" alt="" width="18px"><i class="fa-solid fa-user" id="loginp"></i>profile</a>
+      </li>
+  </ul>
+</nav>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<div class="pannel">
+
+    <div class="pannel-medicine" id="Apple">
+     <i class="fa-solid fa-clipboard-list"></i>
+       <pre>Get 15% off on
+Medicines</pre>
+      <i class="fa-solid fa-angle-right"></i>
+    </div>
+    <div class="pannel-hospital" id="Apple">
+      <i class="fa-regular fa-hospital"></i>
+        <p>Hospital Visit</p>
+        <i class="fa-solid fa-angle-right"></i>
+     </div>
+     <div class="pannel-video" id="Apple">
+      <i class="fa-solid fa-hospital-user"></i>
+        <p>Video Consult</p>
+        <i class="fa-solid fa-angle-right"></i>
+     </div>
+     <div class="pannel-lab" id="Apple">
+      <i class="fa-solid fa-flask-vial"></i>
+        <p>Lab Test</p>
+        <i class="fa-solid fa-angle-right"></i>
+     </div>
+
+</div>
+<!-- navbar -->
+    <!-- contact section -->
+<section class="contact_section layout_padding">
+  <div class="container">
+    <div class="row">
+      <div class="custom_heading-container">
+        <h2>we are always their for you</h2>
+      </div>
+    </div>
+  </div>
+  <div class="container layout_padding2">
+    <div class="row">
+      <div class="col-md-5">
+        <div class="form_container">
+
+          <form  action="contact_process.php" method="post">
+
+            <div class="form-group">
+              <label for="name" >Name</label>
+              <input type="text" id="name" name="name" required class="form-control" id="exampleInputName1">
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="text" id="phone" name="phone" required class="form-control" id="exampleInputNumber1">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required class="form-control" id="exampleInputEmail1">
+            </div>
+            <div class="form-group">
+              <label for="medicine">Select Medicine</label>
+              <select id="medicine" name="medicine" class="form-control">
+                <option value="medicine1">Medicine 1</option>
+                <option value="medicine2">Medicine 2</option>
+                <option value="medicine3">Medicine 3</option>
+                <option value="medicine4">Medicine 4</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <input id="message" name="message" rows="4" required class="form-control" id="exampleInputMessage">
+            </div>
+           <button type="submit"  value="Submit" >Send</button>
+
+          </form>
+        </div>
+      </div>
+      <div class="col-md-7">
+        <div class="detail_box">
+         
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end contact section -->
+<style>
+  /* General Styles */
+.contact_section {
+  padding: 60px 0;
+}
+
+.custom_heading-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.form_container {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-control {
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #246174;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #1f4f68;
+}
+
+.detail_box {
+  padding: 20px;
+  background-color: #e9ecef;
+  border-radius: 8px;
+  height: 500px;
+  width: 600px;
+  background-image: url(contactback2.jpg);
+  background-size: cover;
+}
+
+.detail_box h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.detail_box p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .form_container {
+    margin-bottom: 20px;
+  }
+
+  .detail_box {
+    margin-top: 20px;
+    height: 350px;
+    width: 350px;
+
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+}
+
+</style>
+
+
+
+
+
+ 
+
+    
+<!-- newslater -->
+    
+<div class="container" id="newslater">
+      
+  <h3 class="text-center">Become A + Member Of PharmaBuddy</h3>
+        
+  <div class="input text-center">
+          
+  <input type="text" placeholder="Enter Your Email..">
+          
+  <button id="subscribe">Apply Now</button>
+        
+  </div>
+      
+  </div>
+      
+  <!-- newslater -->
+  <!-- footer -->
+      
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Our offline help-care centre</h3>
+            <p>
+              Amravati <br>
+              Pune <br>
+              Mumbai <br>
+            </p>
+            <strong>Phone:</strong> +91-9876767654 <br>
+            <strong>Email:</strong> pharmabuddy@gmail.com <br>
+          </div>
+  
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+  
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><a href="#">Hospital Visit</a></li>
+              <li><a href="#">Video Consult</a></li>
+              <li><a href="#">Lab Test</a></li>
+              <li><a href="#">Body Checkup</a></li>
+              <li><a href="#">A+ Membership</a></li>
+            </ul>
+          </div>
+  
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Social Networks</h4>
+            <p>We are available across various social media websites for our customers to access</p>
+            <div class="social-links mt-3">
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-skype"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <hr>
+  
+    <div class="container py-4">
+      <div class="copyright">
+        &copy; Copyright <strong><span>PharmaBuddy</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="my_Page.html">YIS</a>
+      </div>
+    </div>
+  </footer>
+  <!-- footer -->
+
+  
+<a href="#" class="arrow"><i><img src="./images/arrow.png" alt=""></i></a>
+
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+</script>
+<script src="index.js" ></script>
+
+</body>
+
+</html

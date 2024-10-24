@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<title>PharmaBuddy</title>
+    
+<link rel="stylesheet" href="style.css">
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    
+<!-- bootstrap links -->
+    
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+<!-- bootstrap links -->
+    
+<!-- fonts links -->
+    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    
+<!-- fonts links -->
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg" id="navbar">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html" id="logo">
+            <span id="span1">P</span>harma<span>Buddy</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span><img src="./images/menu.png" alt="" width="30px"><i class="fa-solid fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="product.html">Product</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Category</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color:#246174;">
+                        <li><a class="dropdown-item" href="sm.html">Anesthesia</a></li>
+                        <li><a class="dropdown-item" href="mp.html">Antiallergics</a></li>
+                        <li><a class="dropdown-item" href="c.html">Dermatological Medicines</a></li>
+                        <li><a class="dropdown-item" href="f.html">Cardiovascular Medicines</a></li>
+                        <li><a class="dropdown-item" href="ac.html">Antiparkinsonism Medicines</a></li>
+                        <li><a class="dropdown-item" href="sw.html">Immunosuppressive Medicines</a></li>
+                        <li><a class="dropdown-item" href="hp.html">Antimigraine Medicines</a></li>
+                        <li><a class="dropdown-item" href="lap.html">Anti-infective Medicines</a></li>
+                        <li><a class="dropdown-item" href="pc.html">Antiallergics Medicines</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="login.html">login</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="register.html">register</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Order <i class="fa-solid fa-cart-shopping"></i></a>
+            </li>
+            </ul>
+            
+        </div>
+    </div>
+    <div class="nav-search">
+        <input placeholder="Search for Medicine and Health Products" class="search-input">
+        <div class="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </div>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item icons" >
+        <a href="profile.html"><img src="./images/register.png" alt="" width="18px"><i class="fa-solid fa-user" id="loginp"></i>profile</a>
+      </li>
+  </ul>
+</nav>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+
+  
+<!-- navbar -->
+
+<section class="AboutBar">
+  <div id="AboutWelcome">
+    <div class="AboutMassage">
+      <div class="headTagA">About Us</div>
+      <div class="subTag">Welcome to Pharmabuddy, India's trusted platform</div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .headTagA {
+    font-size: 65px;
+    font-weight: bold;
+    letter-spacing: 10px;
+  }
+
+  .subTag {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+
+  .AboutBar {
+    margin-top: 8px;
+  }
+
+  #AboutWelcome {
+    height: 90vh;
+    width: 100vw;
+    display: block;
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url("medicalstore.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    z-index: 1;
+  }
+
+  .AboutMassage {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 5;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+  }
+
+  @media (max-width: 768px) {
+    .headTagA {
+      font-size: 45px;
+      letter-spacing: 5px;
+    }
+
+    .subTag {
+      font-size: 20px;
+    }
+
+    #AboutWelcome {
+      background-attachment: scroll; /* Disable fixed background on smaller screens for better performance */
+    }
+  }
+
+  @media (max-width: 576px) {
+    .headTagA {
+      font-size: 30px;
+      letter-spacing: 3px;
+    }
+
+    .subTag {
+      font-size: 16px;
+    }
+
+    .AboutMassage {
+      margin-left: 0; /* Remove margin for smaller screens */
+      padding: 10px; /* Add padding for better spacing */
+    }
+  }
+</style>
+
+
+
+<div class="containerX" id="about">
+        
+<h3 style="text-align:center; color: #4F585E;" >Core value of PharmaBuddy</h3>
+        
+<hr>
+<p><b> Welcome to Pharma Buddy India's Trusted Platform for online Medicines And Hralth Care</b><br> <br> To further our vision and goals, we came up with the 
+  following core values. Our values are highly instrumental in deciding where we want to go and how we will get there.
+
+<br>
+<br.>
+
+<div class="backImg"></div>
+
+
+
+<div class="container" id="about">
+  <p class="intro-text">
+    <b>What is Pharma Buddy</b> <br><br> PharmaBuddy is a consumer healthcare “super Platform” that provides consumers with on-demand, 
+    home delivered access to a wide range of prescription, OTC pharmaceutical, other consumer healthcare products, comprehensive diagnostic 
+    test services, and teleconsultations thereby serving their healthcare needs.
+  </p>
+  <hr>
+  <div class="row" style="margin-top: 50px;">
+    <div class="col-md-5 py-3 py-md-0">
+      <div class="card about-card"></div>
+    </div>
+    <div class="col-md-7 py-3 py-md-0">
+      <p class="sets-us-apart">
+        <b>What Sets Us Apart</b> <br>
+        <ol>
+          <li><b>Unrivaled Selection</b>: Dive into our treasure trove of electronic wonders, handpicked from the brightest minds and hottest trends in the tech world.</li>
+          <li><b>Techtastic Experience</b>: Immerse yourself in a world of interactive demos, hands-on workshops, and exclusive events designed to ignite your passion for innovation.</li>
+          <li><b>Community Connection</b>: Join forces with fellow tech enthusiasts, share ideas, and be part of something bigger than yourself. At GISAVE, we're more than just a store – we're a family.</li>
+        </ol>
+        <br>
+        <b>Join the Revolution</b><br>
+        Ready to embark on your next digital adventure? Whether you're a seasoned tech aficionado or a curious newcomer, GISAVE welcomes you with open arms. Let's write the next chapter of innovation together!
+      </p>
+      <button class="read-more-btn">Read More...</button>
+    </div>
+  </div>
+</div>
+
+<style>
+  .container {
+    padding: 20px;
+  }
+
+  .intro-text, .sets-us-apart {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+  }
+
+  .about-card {
+    background-image: url(about_box1.jpeg);
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .sets-us-apart {
+    margin-top: 20px;
+  }
+
+  .read-more-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4F585E;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  .read-more-btn:hover {
+    background-color: #3E4A50;
+  }
+
+  @media (max-width: 768px) {
+    .intro-text, .sets-us-apart {
+      font-size: 14px;
+    }
+
+    .about-card {
+      height: 300px;
+    }
+
+    .read-more-btn {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .intro-text, .sets-us-apart {
+      font-size: 12px;
+    }
+
+    .about-card {
+      height: 200px;
+    }
+
+    .read-more-btn {
+      font-size: 12px;
+    }
+  }
+</style>
+
+
+    
+<!-- offer -->
+    
+<div class="container" id="offer">
+      
+<div class="row">
+        
+<div class="col-md-3 py-3 py-md-0">
+          
+<i class="fa-solid fa-cart-shopping"></i>
+          
+<h3>Free Shipping</h3>
+          
+<p>On order over $1000</p>
+        
+</div>
+        
+<div class="col-md-3 py-3 py-md-0">
+          
+<i class="fa-solid fa-rotate-left"></i>
+          
+<h3>Free Returns</h3>
+          
+<p>Within 30 days</p>
+       
+</div>
+        
+<div class="col-md-3 py-3 py-md-0">
+          
+<i class="fa-solid fa-truck"></i>
+          
+<h3>Fast Delivery</h3>
+          
+<p>World Wide</p>
+        
+</div>
+        
+<div class="col-md-3 py-3 py-md-0">
+          
+<i class="fa-solid fa-thumbs-up"></i>
+          
+<h3>Big choice</h3>
+          
+<p>Of products</p>
+        
+</div>
+     
+</div>
+    
+</div>
+    
+<!-- offer -->
+
+<!-- newslater -->
+    
+<div class="container" id="newslater">
+      
+  <h3 class="text-center">Become A + Member Of PharmaBuddy</h3>
+        
+  <div class="input text-center">
+          
+  <input type="text" placeholder="Enter Your Email..">
+          
+  <button id="subscribe">Apply Now</button>
+        
+  </div>
+      
+  </div>
+      
+  <!-- newslater -->
+ <!-- footer -->
+<footer id="footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 footer-contact">
+          <h3>Our offline help-care centre</h3>
+          <p>
+            Amravati <br>
+            Pune <br>
+            Mumbai <br>
+          </p>
+          <strong>Phone:</strong> +91-9876767654 <br>
+          <strong>Email:</strong> pharmabuddy@gmail.com <br>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">Hospital Visit</a></li>
+            <li><a href="#">Video Consult</a></li>
+            <li><a href="#">Lab Test</a></li>
+            <li><a href="#">Body Checkup</a></li>
+            <li><a href="#">A+ Membership</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Our Social Networks</h4>
+          <p>We are available across various social media websites for our customers to access</p>
+          <div class="social-links mt-3">
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-skype"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="container py-4">
+    <div class="copyright">
+      &copy; Copyright <strong><span>PharmaBuddy</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      Designed by <a href="my_Page.html">YIS</a>
+    </div>
+  </div>
+</footer>
+<!-- footer -->
+   
+<a href="#" class="arrow">
+<i><img src="./images/arrow.png" alt=""></i></a>
+   
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+</script>
+
+
+</body>
+
+</html>
